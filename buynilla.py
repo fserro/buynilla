@@ -1,6 +1,6 @@
 import pandas as pd
-import os
 import glob
+import os
 
 path = './data/'
 extension = 'csv'
@@ -16,3 +16,5 @@ df = pd.DataFrame()
 for i in result:
     df_test = pd.read_csv(f'{i}', sep=';', index_col=0, parse_dates=True)
     df = pd.concat([df, df_test])
+
+print('hi!')
