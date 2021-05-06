@@ -69,6 +69,7 @@ class Customer:
         
 
 df = read_concat_data()
-cust1 = Customer(1)
+cust1 = Customer(3)
 print(cust1.__repr__())
 print(f"Customer's next location is {cust1.next_location()}")
+
